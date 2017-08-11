@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map of Turkey</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <canvas id="glcanvas" height="800" width="1500">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+
+    <!-- Shaders -->
+    <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
+    <script name="shader" data-src="fragment.glsl" data-type="fragment" data-version="v1"></script>
+
+    <!-- Library: Signals processing used for dispatching methods -->
+    <script type="text/javascript" src="signals.js"></script>
+    <script type="text/javascript" src="glMatrix.js"></script>
+
+    <!-- Library: our common libraries -->
+    <script type="text/javascript" src="glUtils.js"></script>
+    <script type="text/javascript" src="uiUtils.js"></script>
+
+    <!-- This is the bulk of the actual WebGL stuff -->
+    <script type="text/javascript" src="test.js"></script>
+
+  </body>
+</html>
