@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map of Israel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+  <body>
+<header id="header">
+<div class="inner">
+					<nav id="nav">
+						<a href="index.html" class = "logo">Home</a>
+					</nav>
+				</div>  
+</header>
+<section id="banner">
+				<h1>Map of <a href="http://www.gadm.org/country">Israel</a></h1>
+			</section>	
+	<div id="canvas-container">    
+	<canvas id="glcanvas" height = 800 width = 1620 >
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+	</div>
+
+    <!-- Shaders -->
+    <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
+    <script name="shader" data-src="fragment.glsl" data-type="fragment" data-version="v1"></script>
+
+    <!-- Library: Signals processing used for dispatching methods -->
+    <script type="text/javascript" src="signals.js"></script>
+    <script type="text/javascript" src="glMatrix.js"></script>
+
+    <!-- Library: our common libraries -->
+    <script type="text/javascript" src="glUtils.js"></script>
+    <script type="text/javascript" src="uiUtils.js"></script>
+
+    <!-- This is the bulk of the actual WebGL stuff -->
+    <script type="text/javascript" src="3D.js"></script>
+
+
+  </body>
+</html>
